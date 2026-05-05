@@ -1,0 +1,64 @@
+<html>
+   <link rel="stylesheet" href="css/surveystyles.css">
+  <head> 
+    <meta charset="utf-8" name="viewport" content="width=device-width , initail-scale=1.0">
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform
+  </head>
+  <body>
+    <form id="survey-form" method="post" action="https://survey-form.freecodecamp.rocks/">
+      <fieldset>
+        <label for="name" id="name-label">Name
+          <input id="name" type="text" placeholder="Enter your Name" required></label> 
+        <hr>
+        <label for="email-label" id="email-label">Email
+          <input id="email" type="email" placeholder="Enter your Email" required></label><hr>
+        <label for="age" id="number-label">Age (optional)
+          <input id="number" type="number" min="13" max="100" placeholder="Age" ></label><hr></hr>
+        <label for="role">Which option best describes your current role?
+          <select id="dropdown">
+            <option value="" disabled selected>Select current role
+            <option value="1">Student
+            <option value="2">Full time Job
+            <option value="3">Full time Learner
+            <option value="4">Prefer not to say
+            <option value="5">Other
+         </select>
+         <hr>
+      </label>
+      <label>Would you recommend freeCodeCamp to a friend?
+        <input id="definitely" type ="radio" name="recommendation" value="definitely" class="inline" checked /> Definitely </label>
+        <label><input id="maybe" type ="radio" name="recommendation" value="maybe" class="inline"> Maybe</label>
+        <label><input id="not-sure" name="recommendation" type="radio" value="not-sure" class="inline"> Not Sure</label>
+      <hr>
+      <label for="feature" >What is your favorite feature of freeCodeCamp?
+        <select id="dropdown">
+          <option value="" placeholder="Select an option" disabled selected>Select an option
+          <option value="1" type="text">Challenges
+          <option value="2" type="text">Projects
+          <option value="3" type="text">Community
+          <option value="4" type="text">Open Source
+        </select>
+        <hr>
+      <label for="improvement"> What would you like to see impoved? (check all that apply)</label>
+      <lable><input id="front-end-projects" type="checkbox" name="front-end-projects" value="front-end-projects" class="inline"> Front-end Projects</label>
+      <lable><input id="back-end-projects" type="checkbox" name="back-end-projects" value="back-end-projects"  class="inline"> Back-end Projects </label>
+      <lable><input id="data-visualisation" type="checkbox" name="data-visualisation" value="data-visualisation"  class="inline"> Data Visualisation </label>
+      <lable><input id="challenges" type="checkbox" name="challenges" value="challenges" class="inline"> Challenges </label>
+      <lable><input id="open-source-community" type="checkbox" name="open-source-community" value="open-source-community" class="inline"> Open Source Community </label>
+      <lable><input id="gitter-help-rooms" type="checkbox" name="gitter-help-rooms" value="gitter-help-rooms" class="inline"> Gitter help rooms </label>
+      <lable><input id="videos" type="checkbox" name="videos" value="videos" class="inline"> Videos </label>
+      <lable><input id="city-meetups" type="checkbox" name="city-meetups" value="city-meetups" class="inline"> City Meetups </label>
+      <lable><input id="wiki" type="checkbox" name="wiki" value="wiki" class="inline"> Wiki </label>
+      <lable><input id="forum" type="checkbox" name="forum" value="forum" class="inline"> Forum </label>
+      <lable><input id="additional-courses" type="checkbox" name="additional-courses" value="additional-courses" class="inline"> Additional Courses </label>
+      <hr>
+      <label for="comments"> Any comments or suggestion?
+        <textarea id="comments" type="text" rows="5" cols="50" placeholder="Enter your comments here..."></textarea>
+      </label>
+      <hr>
+      <button type="submit" id="submit">Submit</button>
+  </fieldset>
+  </form>
+</body>
+</html>
