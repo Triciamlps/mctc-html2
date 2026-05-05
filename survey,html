@@ -1,5 +1,5 @@
 <html>
-   <link rel="stylesheet" href="css/surveystyles.css">
+   <link rel="stylesheet" href="surveystyles.css">
   <head> 
     <meta charset="utf-8" name="viewport" content="width=device-width , initail-scale=1.0">
     <h1 id="title">freeCodeCamp Survey Form</h1>
